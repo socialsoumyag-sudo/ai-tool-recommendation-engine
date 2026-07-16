@@ -220,17 +220,25 @@ def render_team_mode(registry: ToolRegistry):
 
     professions = list_professions()
 
+    # Profession lives OUTSIDE the form on purpose. Streamlit forms only
+    # rerun on submit -- so a Task dropdown whose options depend on the
+    # Profession selection would show stale options until submit if both
+    # lived inside the same form. Keeping Profession outside means picking
+    # it triggers an immediate rerun, and the Task list below is always
+    # correct before you ever open that dropdown.
+    prof_label = st.selectbox(
+        "Profession", [p.label for p in professions], key="team_add_profession",
+    )
+    profession = next(p for p in professions if p.label == prof_label)
+
     with st.form("add_row_form", clear_on_submit=True):
-        c1, c2, c3, c4 = st.columns([2, 2, 1.4, 1])
+        c1, c2, c3 = st.columns([2, 1.6, 1])
         with c1:
-            prof_label = st.selectbox("Profession", [p.label for p in professions])
-            profession = next(p for p in professions if p.label == prof_label)
-        with c2:
             task_label = st.selectbox("Task", [t.label for t in profession.tasks])
             task = next(t for t in profession.tasks if t.label == task_label)
-        with c3:
+        with c2:
             role_name = st.text_input("Role label (optional)", value="", placeholder=prof_label)
-        with c4:
+        with c3:
             importance = st.slider("Importance", 1, 5, 1, help="e.g. done daily by many people = higher")
         add = st.form_submit_button("+ Add to team", use_container_width=True)
         if add:
