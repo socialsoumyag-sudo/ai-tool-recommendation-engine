@@ -1,0 +1,110 @@
+/* theme.css -- injected into the Streamlit app via st.markdown(unsafe_allow_html=True).
+   Design intent: an enterprise procurement/decision tool, not a demo toy.
+   Palette: deep slate blue + warm graphite neutrals, one amber accent used
+   sparingly for "top pick" moments only. IBM Plex Sans for headers (technical,
+   engineered feel appropriate to a scoring tool), Inter for body/UI text. */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+h1, h2, h3, .hero-title {
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    letter-spacing: -0.01em;
+}
+
+/* ---------- Hero header ---------- */
+.hero-wrap {
+    padding: 1.75rem 2rem;
+    background: linear-gradient(135deg, #16344A 0%, #2C5F7C 100%);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+.hero-title {
+    color: #FFFFFF;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0 0 0.35rem 0;
+}
+.hero-subtitle {
+    color: #CFE0EA;
+    font-size: 0.98rem;
+    font-weight: 400;
+    margin: 0;
+    max-width: 720px;
+    line-height: 1.5;
+}
+
+/* ---------- Section labels ---------- */
+.section-label {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #5C7A8C;
+    margin-top: 0.25rem;
+    margin-bottom: 0.4rem;
+}
+
+/* ---------- Cards ---------- */
+.fit-card {
+    background: #F4F6F8;
+    border: 1px solid #E1E7EB;
+    border-radius: 10px;
+    padding: 1.1rem 1.3rem;
+    margin-bottom: 0.9rem;
+}
+.fit-card-highlight {
+    background: #FFF8EC;
+    border: 1px solid #F0D9A6;
+    border-radius: 10px;
+    padding: 1.1rem 1.3rem;
+    margin-bottom: 0.9rem;
+}
+
+/* ---------- Badges ---------- */
+.badge {
+    display: inline-block;
+    padding: 0.18rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-right: 0.4rem;
+}
+.badge-fresh { background: #E4F3E8; color: #1E7A3D; }
+.badge-stale { background: #FBEAE5; color: #B34632; }
+.badge-vendor { background: #E7EEF3; color: #2C5F7C; }
+.badge-bonus { background: #FFF1D6; color: #8A5A00; }
+
+/* ---------- Metric number ---------- */
+.big-score {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #16344A;
+    line-height: 1;
+}
+.score-caption {
+    font-size: 0.82rem;
+    color: #5C7A8C;
+    margin-top: 0.2rem;
+}
+
+/* ---------- Divider ---------- */
+.thin-divider {
+    border: none;
+    border-top: 1px solid #E1E7EB;
+    margin: 1.1rem 0;
+}
+
+/* ---------- Streamlit widget spacing tightening ---------- */
+div[data-testid="stVerticalBlock"] > div { padding-top: 0.15rem; }
+.stButton > button {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+}

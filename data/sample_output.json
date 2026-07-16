@@ -1,0 +1,70 @@
+{
+  "task_id": "prd_writing",
+  "task_label": "PRD / spec writing",
+  "generated_on": "2026-07-16",
+  "used_llm_explanation": false,
+  "narrative": "Top pick: Claude (score 7.95/10).\nIts biggest contributor was accuracy (9/10); its weakest factor was cost (6/10).\nRunner-up: Gemini (score 7.6/10, 0.35 points behind). It fell short mainly on accuracy relative weighting.",
+  "freshness_summary": "3 of 3 tool entries verified within the last 30 days as of 2026-07-16.",
+  "weights_normalized": {
+    "accuracy": 0.21428571428571427,
+    "cost": 0.09523809523809523,
+    "speed": 0.11904761904761904,
+    "privacy": 0.16666666666666666,
+    "ecosystem": 0.07142857142857142,
+    "context": 0.19047619047619047,
+    "ease": 0.14285714285714285
+  },
+  "ranked_tools": [
+    {
+      "tool": "Claude",
+      "weighted_score": 7.95,
+      "factor_scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "is_stale": false,
+      "source_notes": "Strong long-form structured writing and large context for reconciling multiple input docs.",
+      "runner_up_gap": 0.35
+    },
+    {
+      "tool": "Gemini",
+      "weighted_score": 7.6,
+      "factor_scores": {
+        "accuracy": 7,
+        "cost": 7,
+        "speed": 8,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 8,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "is_stale": false,
+      "source_notes": "Best-in-class if already living in Google Workspace/Docs.",
+      "runner_up_gap": null
+    },
+    {
+      "tool": "ChatGPT",
+      "weighted_score": 7.43,
+      "factor_scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "is_stale": false,
+      "source_notes": "Broad plugin ecosystem, slightly less consistent on long structured docs than Claude.",
+      "runner_up_gap": null
+    }
+  ]
+}

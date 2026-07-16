@@ -1,0 +1,17 @@
+{
+  "best_of_breed_total": 51.88,
+  "single_suite": {
+    "tool": "Claude",
+    "coverage_pct": 98.5,
+    "total_score": 51.08
+  },
+  "complementary_pair": {
+    "tools": [
+      "Claude",
+      "Gemini"
+    ],
+    "coverage_pct": 100.0,
+    "total_score": 51.88
+  },
+  "narrative": "Analyzed 3 task(s) across 3 role(s). Best-of-breed upper bound: 51.88/pt scale.\nStandardizing on Claude alone covers 98.5% of best-of-breed quality across the whole team.\nAllowing exactly two tools (Claude + Gemini) recovers 100.0% of best-of-breed quality -- a marginal improvement over standardizing on one tool.\nExisting-platform bonus (+0.75 pts) was applied to tools from: Google."
+}

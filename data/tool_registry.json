@@ -1,0 +1,808 @@
+{
+  "_meta": {
+    "schema_version": 1,
+    "note": "Scores are 1-10 per factor, per (tool, task) pair. 'cost' and 'speed' are already inverted so that 10 = cheap/fast, consistent with the other factors where higher is always better. last_verified is used by refresh_agent to decide staleness. source_notes are short, human-written justifications -- not scraped text. Each entry also carries a 'vendor' field (Anthropic / OpenAI / Google / Microsoft / Independent) used for platform-fit bonus scoring in team_engine.py."
+  },
+  "entries": [
+    {
+      "tool": "Claude",
+      "task": "prd_writing",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Strong long-form structured writing and large context for reconciling multiple input docs.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "prd_writing",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Broad plugin ecosystem, slightly less consistent on long structured docs than Claude.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Gemini",
+      "task": "prd_writing",
+      "scores": {
+        "accuracy": 7,
+        "cost": 7,
+        "speed": 8,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 8,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Best-in-class if already living in Google Workspace/Docs.",
+      "vendor": "Google"
+    },
+    {
+      "tool": "Claude",
+      "task": "roadmap_synthesis",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Handles conflicting multi-source input well; large context window is the deciding factor here.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "roadmap_synthesis",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Good, but tends to smooth over genuine stakeholder conflicts rather than surface them.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Gemini",
+      "task": "roadmap_synthesis",
+      "scores": {
+        "accuracy": 7,
+        "cost": 7,
+        "speed": 7,
+        "privacy": 7,
+        "ecosystem": 8,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Solid synthesis, strongest when source docs are already in Drive/Sheets.",
+      "vendor": "Google"
+    },
+    {
+      "tool": "Claude",
+      "task": "exec_comms",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Consistently crisp, low-fluff tone that reads as exec-ready without heavy editing.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "exec_comms",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Fast and capable, occasionally needs a tone pass to cut filler.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Copilot (Microsoft 365)",
+      "task": "exec_comms",
+      "scores": {
+        "accuracy": 7,
+        "cost": 5,
+        "speed": 7,
+        "privacy": 9,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Best fit if the org is Microsoft-native and enterprise data governance is the top constraint.",
+      "vendor": "Microsoft"
+    },
+    {
+      "tool": "Claude",
+      "task": "data_analysis",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Good reasoning over messy tabular data pasted directly into chat.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "data_analysis",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Code Interpreter / Advanced Data Analysis gives it an edge for genuinely messy files.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Gemini",
+      "task": "data_analysis",
+      "scores": {
+        "accuracy": 7,
+        "cost": 7,
+        "speed": 7,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Sheets-native analysis is a real advantage if data already lives there.",
+      "vendor": "Google"
+    },
+    {
+      "tool": "Claude",
+      "task": "meeting_notes",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Reliable at extracting action items without inventing ones that weren't said.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Otter.ai",
+      "task": "meeting_notes",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 9,
+        "privacy": 7,
+        "ecosystem": 7,
+        "context": 5,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Purpose-built for live transcription + action items; less useful outside meeting context.",
+      "vendor": "Independent"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "meeting_notes",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Fine for one-off notes, no native meeting capture.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "competitive_research",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Strong synthesis once source material is provided; web search adds real-time capability.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Perplexity",
+      "task": "competitive_research",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 6,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Purpose-built for cited web research; the fastest path from question to sourced answer.",
+      "vendor": "Independent"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "competitive_research",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Capable with browsing enabled, less citation-forward than Perplexity by default.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "technical_review",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 6
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Strong at holding an entire spec in context and flagging internal inconsistencies.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "technical_review",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Good general capability, slightly less rigorous on long specs than Claude.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "task": "code_generation",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 9,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Best-in-class IDE-native autocomplete and inline generation.",
+      "vendor": "Microsoft"
+    },
+    {
+      "tool": "Claude",
+      "task": "code_generation",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 7,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Strong for whole-file/whole-repo reasoning, not just line completion.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Cursor",
+      "task": "code_generation",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 7,
+        "ecosystem": 8,
+        "context": 8,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Purpose-built AI-native IDE; strong multi-file editing workflow.",
+      "vendor": "Independent"
+    },
+    {
+      "tool": "Claude",
+      "task": "code_review",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 6
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Careful, low false-positive rate when flagging real bugs vs. style nits.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "task": "code_review",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 9,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "PR review integration is fast and native, less deep than a full-context review.",
+      "vendor": "Microsoft"
+    },
+    {
+      "tool": "Claude",
+      "task": "test_writing",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Good coverage reasoning, tends to avoid brittle tests on non-deterministic output.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "task": "test_writing",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 9,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Fast inline test scaffolding, less reasoning about edge cases than a dedicated pass.",
+      "vendor": "Microsoft"
+    },
+    {
+      "tool": "Claude",
+      "task": "architecture_design",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 5,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 9,
+        "ease": 6
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Best suited for reasoning through tradeoffs across a large system context.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "architecture_design",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 7,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Capable, slightly less consistent holding a full system design in view.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "documentation",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Clean, well-structured technical writing from code context.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "task": "documentation",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Convenient inline docstring generation, less suited to longer-form docs.",
+      "vendor": "Microsoft"
+    },
+    {
+      "tool": "Claude",
+      "task": "requirements_gathering",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Strong at structuring loose interview notes into formal requirement statements.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "requirements_gathering",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Solid general performance, template-friendly.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "process_mapping",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Good at describing as-is/to-be flows in text; no native diagramming.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Lucidchart AI",
+      "task": "process_mapping",
+      "scores": {
+        "accuracy": 7,
+        "cost": 5,
+        "speed": 7,
+        "privacy": 7,
+        "ecosystem": 8,
+        "context": 5,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Best when the deliverable needs to be an actual visual diagram, not just text.",
+      "vendor": "Independent"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "sql_query_help",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Fast, reliable for common SQL dialects and debugging.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "sql_query_help",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Equally capable, edge case handling on complex joins is slightly more careful.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Claude",
+      "task": "stakeholder_docs",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Strong for formal BRD/FSD structure and long-context consistency.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "stakeholder_docs",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Good general performance with strong template availability.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "campaign_strategy",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Strong strategic reasoning, no native ad-platform integration.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "campaign_strategy",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Broad marketing-plugin ecosystem is a real edge here.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Jasper",
+      "task": "content_generation",
+      "scores": {
+        "accuracy": 7,
+        "cost": 5,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Purpose-built for on-brand marketing copy at scale with brand-voice presets.",
+      "vendor": "Independent"
+    },
+    {
+      "tool": "Claude",
+      "task": "content_generation",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Strong writing quality, needs more manual brand-voice setup than Jasper.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "content_generation",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Fast and flexible, but brand-voice drift over long sessions is a known issue.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "market_research",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Good synthesis of provided research; web search adds real-time capability.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Perplexity",
+      "task": "market_research",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 6,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Fastest path to cited, current market data.",
+      "vendor": "Independent"
+    },
+    {
+      "tool": "Claude",
+      "task": "performance_analysis",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Solid at interpreting pasted analytics data and explaining trends.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "performance_analysis",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Advanced Data Analysis gives it an edge on messy raw exports.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "brand_voice_consistency",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Large context window helps hold a full style guide consistently across a long session.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Jasper",
+      "task": "brand_voice_consistency",
+      "scores": {
+        "accuracy": 8,
+        "cost": 5,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-01",
+      "source_notes": "Purpose-built brand-voice presets give it a structural edge for this specific task.",
+      "vendor": "Independent"
+    }
+  ]
+}
