@@ -25,7 +25,7 @@ Same philosophy as [ai-readiness-advisor](https://github.com/socialsoumyag-sudo/
 ## What it does
 
 **Individual mode:**
-1. **Pick your profession and task** — PM, BA, SDE, and Marketing VP ship with a default task checklist (`rules_engine/task_taxonomy.py`); easy to extend.
+1. **Pick your profession and task** — 10 professions ship with a default task checklist (`rules_engine/task_taxonomy.py`): Product/Program Manager, Business Analyst, Software Development Engineer, VP/Head of Marketing, Data Scientist/ML Engineer, HR Business Partner, Sales/Account Executive, Finance Analyst (FP&A), Customer Support Lead, and Legal Counsel/Paralegal. Easy to extend further.
 2. **Set your weights** — seven factors (accuracy, cost, speed, privacy, ecosystem, context window, ease of use), tunable per person because a solo builder and an enterprise compliance team should never get the same ranking for the same task.
 3. **Get a ranked, dated, sourced result** — a radar chart across the top 3 tools, a full ranked table, and a narrative that explains not just why the winner won, but *specifically what number* cost the runner-up first place.
 
@@ -103,7 +103,7 @@ python -c "from rules_engine.tool_registry import ToolRegistry; from research_ag
 
 ## Scope — what this does *not* do (yet)
 
-- The seed registry (`data/tool_registry.json`) covers a starting set of tools across four professions — it's a foundation to extend, not an exhaustive market map.
+- The seed registry (`data/tool_registry.json`) now covers 106 entries across 10 professions and ~35 tasks — a real foundation, still not an exhaustive market map. A few domain-specific tools (Textio, Salesforce Einstein Copilot, Intercom Fin, Harvey) are included alongside the generalist tools for realism.
 - Tool capability scores are directional judgment calls with stated reasoning, not benchmarked lab results — treat the ranking as a structured starting point for a decision, not a certification.
 - The refresh job is designed to be run on a schedule (cron / GitHub Action) — it does not run automatically on every dashboard load, by design, to keep API spend predictable.
 - No persistence of past reports or user accounts yet — each session is a one-off, not a tracked history (a natural v2 addition).

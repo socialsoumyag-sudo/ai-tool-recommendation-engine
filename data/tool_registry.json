@@ -803,6 +803,902 @@
       "last_verified": "2026-07-01",
       "source_notes": "Purpose-built brand-voice presets give it a structural edge for this specific task.",
       "vendor": "Independent"
+    },
+    {
+      "tool": "Claude",
+      "task": "eda_and_insights",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong at reasoning over pasted datasets and surfacing non-obvious patterns in context.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "eda_and_insights",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Advanced Data Analysis mode gives it a real edge on messy, large files.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Gemini",
+      "task": "eda_and_insights",
+      "scores": {
+        "accuracy": 7,
+        "cost": 7,
+        "speed": 7,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Best when data already lives in Sheets/BigQuery.",
+      "vendor": "Google"
+    },
+    {
+      "tool": "GitHub Copilot",
+      "task": "ml_prototyping",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 9,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast inline completion for notebook-style iterative experimentation.",
+      "vendor": "Microsoft"
+    },
+    {
+      "tool": "Claude",
+      "task": "ml_prototyping",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 7,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong at whole-file reasoning when debugging a training pipeline, not just autocomplete.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "ml_prototyping",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Solid general capability, Code Interpreter helps for quick experiment iteration.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "model_documentation",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Clean, structured writeups that hold a full experiment log in context.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "model_documentation",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Good general writing quality, template-friendly for standard writeup formats.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "research_paper_summary",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Handles long papers well without losing methodology nuance.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Perplexity",
+      "task": "research_paper_summary",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 6,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast for surfacing related work and citations alongside the summary.",
+      "vendor": "Independent"
+    },
+    {
+      "tool": "Claude",
+      "task": "job_description_writing",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Consistently neutral, bias-aware phrasing without heavy manual editing.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Textio",
+      "task": "job_description_writing",
+      "scores": {
+        "accuracy": 8,
+        "cost": 5,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 5,
+        "ease": 9
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Purpose-built for inclusive-language scoring in job postings specifically.",
+      "vendor": "Independent"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "job_description_writing",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast and capable, needs a manual bias-language pass more often than Claude.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "interview_question_drafting",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Good at producing role-calibrated, legally-safer question sets.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "interview_question_drafting",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Broad template availability for common interview formats.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "policy_document_drafting",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong for formal, consistent policy language across a long document.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Copilot (Microsoft 365)",
+      "task": "policy_document_drafting",
+      "scores": {
+        "accuracy": 7,
+        "cost": 5,
+        "speed": 7,
+        "privacy": 9,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Best fit if policies live and get approved inside Word/SharePoint workflows.",
+      "vendor": "Microsoft"
+    },
+    {
+      "tool": "Claude",
+      "task": "employee_comms",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Careful, calibrated tone -- important for sensitive company-wide messages.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "employee_comms",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 9
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast turnaround, occasionally needs a tone pass for sensitive topics.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "sales_email_drafting",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 9,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 9
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast, high-volume personalization is its core strength here.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "sales_email_drafting",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Slightly stronger at avoiding generic-sounding outreach copy.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Copilot (Microsoft 365)",
+      "task": "sales_email_drafting",
+      "scores": {
+        "accuracy": 7,
+        "cost": 5,
+        "speed": 8,
+        "privacy": 9,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Native Outlook integration speeds up the actual send workflow.",
+      "vendor": "Microsoft"
+    },
+    {
+      "tool": "Claude",
+      "task": "proposal_writing",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong at holding full deal context to produce a coherent, tailored proposal.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "proposal_writing",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Good general quality, wide template availability.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Salesforce Einstein Copilot",
+      "task": "crm_notes_summarization",
+      "scores": {
+        "accuracy": 8,
+        "cost": 5,
+        "speed": 8,
+        "privacy": 8,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Native CRM integration means notes land directly in the right record.",
+      "vendor": "Salesforce"
+    },
+    {
+      "tool": "Claude",
+      "task": "crm_notes_summarization",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong summarization quality if notes are pasted in manually.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "crm_notes_summarization",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Solid, no native CRM integration out of the box.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "objection_handling_prep",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Good at generating realistic, specific objections rather than generic ones.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "objection_handling_prep",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast roleplay-style practice, broad familiarity with sales frameworks.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Copilot (Microsoft 365)",
+      "task": "financial_modeling_support",
+      "scores": {
+        "accuracy": 8,
+        "cost": 5,
+        "speed": 7,
+        "privacy": 9,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Native Excel integration is the deciding factor for spreadsheet-heavy modeling work.",
+      "vendor": "Microsoft"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "financial_modeling_support",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong formula/logic reasoning, no native spreadsheet integration.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "financial_modeling_support",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Careful, methodical reasoning through model logic and edge cases.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Claude",
+      "task": "variance_analysis_narrative",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Turns raw variance numbers into a clear, non-generic business narrative.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "variance_analysis_narrative",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Solid, fast, good for a first-pass narrative draft.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "report_summarization",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 9,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Handles long financial reports without losing key figures or caveats.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "report_summarization",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast, good general summarization quality.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "forecast_narrative_writing",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 6,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong at turning numeric forecasts into a coherent business story.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "forecast_narrative_writing",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 8,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Good general quality, wide familiarity with standard forecast formats.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Intercom Fin",
+      "task": "support_ticket_summarization",
+      "scores": {
+        "accuracy": 8,
+        "cost": 5,
+        "speed": 9,
+        "privacy": 7,
+        "ecosystem": 9,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Purpose-built for support workflows, summarizes directly inside the ticket.",
+      "vendor": "Intercom"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "support_ticket_summarization",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Good general summarization if tickets are exported or pasted in.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "support_ticket_summarization",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong at preserving nuance across long, multi-agent ticket threads.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Claude",
+      "task": "macro_response_drafting",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 7,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Consistent tone across a large batch of template responses.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "macro_response_drafting",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast at generating a first draft set of templates to edit.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "qa_review_of_transcripts",
+      "scores": {
+        "accuracy": 9,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Careful, low false-positive rate flagging genuine tone/policy issues.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "qa_review_of_transcripts",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 7,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Decent general review quality, more manual calibration needed.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "knowledge_base_article_writing",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Clean, structured articles that read well for end users.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "knowledge_base_article_writing",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast, good general writing quality.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Harvey",
+      "task": "contract_review_assist",
+      "scores": {
+        "accuracy": 9,
+        "cost": 4,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 7,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Purpose-built for legal review with domain-specific training; premium pricing.",
+      "vendor": "Harvey"
+    },
+    {
+      "tool": "Claude",
+      "task": "contract_review_assist",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 9,
+        "ease": 6
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong general-purpose reasoning for flagging non-standard clauses, large context helps on long contracts.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "contract_review_assist",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 7,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Decent for a first pass, less specialized than a legal-specific tool.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "clause_drafting",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 8,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Careful, precise language generation for standard clause types.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "clause_drafting",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 7,
+        "ease": 8
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast first drafts, needs legal review regardless of tool used.",
+      "vendor": "OpenAI"
+    },
+    {
+      "tool": "Claude",
+      "task": "legal_research_summary",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 9,
+        "ease": 6
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Good at holding and cross-referencing long regulatory text in context.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "Perplexity",
+      "task": "legal_research_summary",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 8,
+        "privacy": 6,
+        "ecosystem": 6,
+        "context": 6,
+        "ease": 9
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Fast for surfacing current, cited sources -- always verify against primary law.",
+      "vendor": "Independent"
+    },
+    {
+      "tool": "Claude",
+      "task": "policy_compliance_review",
+      "scores": {
+        "accuracy": 8,
+        "cost": 6,
+        "speed": 6,
+        "privacy": 8,
+        "ecosystem": 5,
+        "context": 9,
+        "ease": 6
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Strong at cross-checking a policy draft against a long compliance standard in one pass.",
+      "vendor": "Anthropic"
+    },
+    {
+      "tool": "ChatGPT",
+      "task": "policy_compliance_review",
+      "scores": {
+        "accuracy": 7,
+        "cost": 6,
+        "speed": 7,
+        "privacy": 6,
+        "ecosystem": 7,
+        "context": 7,
+        "ease": 7
+      },
+      "last_verified": "2026-07-20",
+      "source_notes": "Decent first-pass check, human legal review still required.",
+      "vendor": "OpenAI"
     }
   ]
 }
